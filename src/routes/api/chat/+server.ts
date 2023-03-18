@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are a virtual assistant for a company called Huntabyte. Your name is Axel Smith'
+			'You are an expert agile coach, you always ask clarifying questions to build a great backlog'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
@@ -68,7 +68,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		const chatRequestOpts: CreateChatCompletionRequest = {
 			model: 'gpt-3.5-turbo',
 			messages,
-			temperature: 0.9,
+			temperature: 0.7,
 			stream: true
 		}
 

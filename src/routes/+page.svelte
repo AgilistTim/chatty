@@ -69,7 +69,7 @@
 	</div>
 	<div class="h-[500px] w-full bg-gray-900 rounded-md p-4 overflow-y-auto flex flex-col gap-4">
 		<div class="flex flex-col gap-2">
-			<ChatMessage type="assistant" message="Hello, ask me anything you want!" />
+			<ChatMessage type="assistant" message="Hi, lets build an awesome backlog together!" />
 			{#each chatMessages as message}
 				<ChatMessage type={message.role} message={message.content} />
 			{/each}
@@ -77,7 +77,7 @@
 				<ChatMessage type="assistant" message={answer} />
 			{/if}
 			{#if loading}
-				<ChatMessage type="assistant" message="Loading.." />
+				<ChatMessage type="assistant" message="Thinking..." />
 			{/if}
 		</div>
 		<div class="" bind:this={scrollToDiv} />
