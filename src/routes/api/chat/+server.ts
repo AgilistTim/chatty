@@ -53,7 +53,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		}
 
 		const prompt =
-			'You are an expert agile coach, you always ask clarifying questions to build a great backlog'
+			'You are an expert agile coach, you always ask clarifying questions to build a great backlog your focus is on having clear and well defined backlog items, user stories will always have a clearly defined user'
 		tokenCount += getTokens(prompt)
 
 		if (tokenCount >= 4000) {
